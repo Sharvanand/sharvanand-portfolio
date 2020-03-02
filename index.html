@@ -18,33 +18,40 @@
   </head>
   <body>
     <header class="header">
-      <div class="brand">
-        <h3>Sharvanand</h3>
+      <div class="toggle">
+        <i class="fa fa-bars menu" aria-hidden="true"></i>
       </div>
+      <!-- <div class="brand">
+        <h3>Sharvanand</h3>
+      </div> -->
       <nav class="nav">
         <ul class="nav-links">
-          <li><a class="nav-link" href="#">Projects</a></li>
-          <li><a class="nav-link" href="#">Skills</a></li>
-          <li><a class="nav-link" href="#">Education</a></li>
-          <li><a class="nav-link" href="#">contact</a></li>
+          <li><a class="nav-link" href="#portfolio">Projects</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="nav-link" href="#contact">contact</a></li>
         </ul>
+        <div class="nav-toggle">
+          <ul>
+            <li><a class="nav-link" href="#portfolio">Projects</a></li>
+            <li><a class="nav-link" href="#skills">Skills</a></li>
+            <li><a class="nav-link" href="#education">Education</a></li>
+            <li><a class="nav-link" href="#contact">contact</a></li>
+          </ul>
+        </div>
       </nav>
       <div class="name-box">
         <img src="./images/shaggy.jpg" alt="" />
-        <h2 class="box-developer">Front End Developer</h2>
+        <h2 class="box-developer">Sharvanand Thiru</h2>
+        <h3 class="box-developer">UI developer</h3>
         <div class="github-links">
           <a href="https://github.com/Sharvanand" target="_blank"
-            >Github Repo</a
-          >
-          <a
-            href="https://stackoverflow.com/users/5459718/sharvanand"
-            target="_blank"
-            >Stack Overflow</a
+            >Github Repos</a
           >
         </div>
       </div>
     </header>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="portfolio-box">
         <h3>Weather Application</h3>
         <img class="img-center" src="./images/portfolio-3.jpeg" alt="" />
@@ -78,7 +85,7 @@
     </section>
 
     <!--Skills starts here ...-->
-    <section class="skills">
+    <section class="skills" id="skills">
       <div class="skills-box">
         <div class="about-me">
           <h4>About Me</h4>
@@ -95,7 +102,7 @@
             being used by Other people.
           </p>
         </div>
-        <div class="about-me">
+        <div class="about-tech">
           <h4>Technical Skills</h4>
           <ul class="skills-ul">
             <li>HTML5</li>
@@ -115,19 +122,19 @@
         </div>
       </div>
     </section>
-    <section class="education">
+    <section class="education" id="education">
       <div class="education-box">
         <h4>Achievement</h4>
         <p>Masters in Information TEchnology</p>
         <p>Batchelors in Geography(GIS)</p>
       </div>
-      <div>
+      <div class="education-school">
         <h4>School</h4>
         <p>University Of East London</p>
         <p>University of Jaffna</p>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="form-box">
         <h3>Contact</h3>
         <form class="form-submission" action="">
@@ -170,6 +177,8 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <script src="js/scroll.js"></script>
+
     <script src="js/main.js"></script>
   </body>
 </html>
