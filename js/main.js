@@ -1,3 +1,9 @@
 $(document).ready(function() {
-  $(".menu").click(function() {});
+  $(".nav-toggle").hide();
+  $(".menu").click(function() {
+    $(".nav-toggle").toggle();
+  });
+
+  function devLoad() {}
+  devLoad();
 });

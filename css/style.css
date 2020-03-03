@@ -95,12 +95,13 @@ html {
   color: var(--color-black);
   margin-bottom: 3%;
 }
-.name-box h3 {
+.show-developer li {
   font-weight: 400;
   text-transform: uppercase;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
   color: var(--color-black);
   text-align: center;
+  list-style: none;
 }
 .github-links {
   display: flex;
@@ -394,7 +395,12 @@ textarea {
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
-    position: relative;
+  }
+  .name-box img {
+    margin-top: 15%;
+  }
+  .name-box h2 {
+    text-align: center;
   }
   .brand h3 {
     display: block;
@@ -477,12 +483,13 @@ textarea {
     width: 100%;
   }
   .skills {
-    height: 100vh;
-    padding-top: 25%;
+    height: 100%;
+    padding: 15% 0 10% 0;
     margin-top: 25%;
   }
   .skills-box {
     padding-top: 10%;
+    padding-bottom: 3%;
   }
   .about-me {
     display: none;
@@ -504,7 +511,7 @@ textarea {
   .contact {
   }
   .form-box {
-    width: 90%;
+    width: 95%;
     padding: 0 3% 10%;
   }
   .footer {
