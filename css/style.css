@@ -50,11 +50,12 @@ html {
   display: inline-block;
   text-decoration: none;
   padding: 2rem 3rem 0 0;
-  color: var(--color-primary);
+  color: #0f3561;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.3rem;
   animation: down 1.5s ease-in;
+  font-weight: 700;
 }
 .nav-links a:hover {
   color: #fff;
@@ -72,6 +73,7 @@ html {
 }
 
 .name-box {
+  height: 30%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -88,15 +90,15 @@ html {
   animation: up 1.5s ease-in;
 }
 
-.name-box h2 {
-  font-weight: 400;
+.name-box h3 {
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   color: var(--color-black);
   margin-bottom: 3%;
 }
-.show-developer li {
-  font-weight: 400;
+#changeme {
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   color: var(--color-black);
@@ -129,7 +131,7 @@ html {
   background-color: black;
   margin: -15vh auto -8vh;
   background-color: #fafafa;
-  padding-bottom: 12%;
+  padding-bottom: 8%;
 }
 .portfolio-box {
   width: 100%;
@@ -140,7 +142,7 @@ html {
   padding: 17% 0 4% 0;
   text-transform: uppercase;
   color: var(--color-primary);
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.3rem;
 }
 .img-center {
@@ -174,6 +176,21 @@ html {
   background-color: #4db6ac;
   color: var(--color-white);
 }
+.portfolio-text {
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+.portfolio-text p {
+  text-align: center;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  line-height: 2;
+  color: #757575;
+  margin-bottom: 3%;
+}
 .skills {
   height: 80vh;
   opacity: 0.9;
@@ -198,7 +215,7 @@ html {
 .about-me h4 {
   text-align: center;
   color: var(--color-white);
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   margin-bottom: 3%;
@@ -206,7 +223,7 @@ html {
 .about-tech h4 {
   text-align: center;
   color: var(--color-white);
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   margin-bottom: 3%;
@@ -214,7 +231,7 @@ html {
 .about-me p {
   color: var(--color-white);
   text-align: center;
-
+  margin-bottom: 3%;
   font-weight: 100;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
@@ -249,7 +266,7 @@ html {
 .education h4 {
   text-align: center;
   color: #757575;
-  font-weight: 100;
+  font-weight: 400;
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   margin-bottom: 5%;
@@ -395,6 +412,13 @@ textarea {
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
+    position: relative;
+  }
+  .name-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .name-box img {
     margin-top: 15%;
@@ -430,7 +454,7 @@ textarea {
     display: block;
     text-align: center;
     background-color: #0f3561;
-    padding: 3% 3%;
+    padding: 2% 2%;
   }
   .nav-toggle li a {
     text-decoration: none;

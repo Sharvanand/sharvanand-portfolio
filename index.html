@@ -42,10 +42,10 @@
       </nav>
       <div class="name-box">
         <img src="./images/shaggy.jpg" alt="" />
-        <h2 class="box-developer">Sharvanand Thiru</h2>
-        <ul class="show-developer">
-          <li>UI Developer</li>
-        </ul>
+        <h3 class="box-developer">Sharvanand Thiru</h3>
+        <div class="show-developer">
+          <h4 id="changeme"></h4>
+        </div>
         <div class="github-links">
           <a href="https://github.com/Sharvanand" target="_blank"
             >Github Repos</a
@@ -55,8 +55,40 @@
     </header>
     <section class="portfolio" id="portfolio">
       <div class="portfolio-box">
+        <h3>Employee Managment App</h3>
+        <img class="img-center" src="./images/portfolio-1.jpeg" alt="" />
+        <div class="portfolio-btn">
+          <a href="https://mern-employee-app.herokuapp.com/" target="_blank"
+            >view online</a
+          >
+          <a href="https://github.com/Sharvanand/mern-crud-app" target="_blank"
+            >code on github</a
+          >
+        </div>
+        <div class="portfolio-text">
+          <p>
+            The app was developed to create Employee Records in the company. I
+            used React,Redux and Reactstrap to create Frontend. In backend,I
+            used NodeJS,Express and MongoDB. Data is stored on MongoDB Atlas
+            cloud Platform.
+          </p>
+
+          <p>
+            It is actually Public
+            <a
+              href="https://mern-employee-app.herokuapp.com/api/items "
+              target="_blank"
+            >
+              Rest API</a
+            >. Redux hooked up with react to manage states. Middleware thunk
+            dispatches actions to update stores via reducers.
+          </p>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
         <h3>Weather Application</h3>
-        <img class="img-center" src="./images/portfolio-3.jpeg" alt="" />
+        <img class="img-center" src="./images/portfolio-2.jpeg" alt="" />
         <div class="portfolio-btn">
           <a
             href="https://react-redux-eather-app.herokuapp.com/"
@@ -69,10 +101,23 @@
             >code on github</a
           >
         </div>
+        <div class="portfolio-text">
+          <p>
+            App was designed to check the city weather. The openweather map
+            public API was used to fetch the data. The data flows from API so
+            there is no backend involved in this app. React, Redux and
+            Materialize Css were used to build the app.
+          </p>
+          <p>
+            The redux was used to handle the state management. Async/Wait
+            Fucntion was used in action creators to call the api. i used
+            Async/Wait function to handle the delay response from API.
+          </p>
+        </div>
       </div>
       <div class="portfolio-box">
         <h3>Glossy Studio</h3>
-        <img class="img-center" src="./images/portfolio-2.jpeg" alt="" />
+        <img class="img-center" src="./images/portfolio-3.jpeg" alt="" />
         <div class="portfolio-btn">
           <a href="https://glossystudio.netlify.com/" target="_blank"
             >view online</a
@@ -83,6 +128,18 @@
             >code on github</a
           >
         </div>
+        <div class="portfolio-text">
+          <p>
+            Glossy Studio is a modelling static website. the website fully was
+            designed using Materialize CSS. Materialize is css framework.
+          </p>
+          <p>
+            It has nice grids to layout pages. Most important thing about this
+            Framework is the color pallet in it. More color options are
+            available. it has Perfect form design and modals.
+          </p>
+          <br />
+        </div>
       </div>
     </section>
 
@@ -92,16 +149,14 @@
         <div class="about-me">
           <h4>About Me</h4>
           <p>
-            Coding is my passion. I feel so great when i make something which is
-            being used by Other people.
+            I am so impressed with TEchnology world these days becasue of
+            evolving languages and frame works. There is always something new
+            Which made me to be passionate about it.
           </p>
+
           <p>
-            Coding is my passion. I feel so great when i make something which is
-            being used by Other people.
-          </p>
-          <p>
-            Coding is my passion. I feel so great when i make something which is
-            being used by Other people.
+            The perfection is something that is very important to me which is
+            possible through the efficient ways to reach the goals.
           </p>
         </div>
         <div class="about-tech">
@@ -139,15 +194,15 @@
     <section class="contact" id="contact">
       <div class="form-box">
         <h3>Contact</h3>
-        <form class="form-submission" action="">
+        <form class="form-submission" action="POST" data-netlify="true">
           <label for="name">Name</label>
-          <input type="text" id="name" />
+          <input type="text" id="name" name="name" />
           <label for="email">Email</label>
-          <input type="email" id="email" />
+          <input type="email" id="email" name="email" />
           <label for="Subject">Subject</label>
-          <input type="text" id="subject" />
+          <input type="text" id="subject" name="subject" />
           <label for="textarea">Message</label>
-          <textarea id="textarea" cols="35" rows="10"></textarea>
+          <textarea id="textarea" cols="35" rows="10" name="message"></textarea>
           <a href="#">Send</a>
         </form>
       </div>

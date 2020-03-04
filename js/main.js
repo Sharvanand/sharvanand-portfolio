@@ -4,6 +4,21 @@ $(document).ready(function() {
     $(".nav-toggle").toggle();
   });
 
-  function devLoad() {}
-  devLoad();
+  $(function() {
+    count = 0;
+    wordsArray = [
+      "FullStack Developer",
+      "UI Developer",
+      "Frontend Engineer",
+      "React Developer"
+    ];
+    setInterval(function() {
+      count++;
+      $("#changeme").fadeOut(400, function() {
+        $(this)
+          .text(wordsArray[count % wordsArray.length])
+          .fadeIn(400);
+      });
+    }, 2000);
+  });
 });
