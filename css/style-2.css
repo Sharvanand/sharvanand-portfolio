@@ -1,6 +1,4 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
-:root {
+/* /* :root {
   --color-white: #fff;
   --color-black: #000;
   --color-primary: #1a237e;
@@ -9,38 +7,19 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 html {
   font-family: "Lat", sans-serif;
   font-size: 1.125rem;
-  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
 .header {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      right bottom,
-      from(rgba(144, 202, 249, 0.801)),
-      to(rgba(0, 102, 255, 0.801))
-    ),
-    url(../images/banner.jpg);
-  background-image: -o-linear-gradient(
-      left top,
-      rgba(144, 202, 249, 0.801),
-      rgba(0, 102, 255, 0.801)
-    ),
-    url(../images/banner.jpg);
   background-image: linear-gradient(
       to right bottom,
       rgba(144, 202, 249, 0.801),
@@ -49,7 +28,6 @@ html {
     url(../images/banner.jpg);
   background-size: cover;
   background-position: center;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
 }
 
@@ -61,14 +39,10 @@ html {
   color: var(--color-primary);
   text-transform: uppercase;
   letter-spacing: 0.3rem;
-  -webkit-animation: down 1.5s ease-in;
   animation: down 1.5s ease-in;
 }
 .nav-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
   list-style-type: none;
 }
@@ -80,7 +54,6 @@ html {
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.3rem;
-  -webkit-animation: down 1.5s ease-in;
   animation: down 1.5s ease-in;
   font-weight: 700;
 }
@@ -104,8 +77,6 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 .name-box img {
@@ -114,10 +85,8 @@ html {
   width: 150px;
   margin: 0 auto;
   border-radius: 100px;
-  -webkit-box-shadow: 0 2px 18px rgba(0, 0, 0, 0.7);
   box-shadow: 0 2px 18px rgba(0, 0, 0, 0.7);
   margin-bottom: 2rem;
-  -webkit-animation: up 1.5s ease-in;
   animation: up 1.5s ease-in;
 }
 
@@ -137,11 +106,7 @@ html {
   list-style: none;
 }
 .github-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   margin-top: 7%;
 }
@@ -186,16 +151,11 @@ html {
   margin-right: auto;
   width: 90%;
   border: 1px solid #e0e0e0;
-  -webkit-animation: load 1.5s ease-in;
   animation: load 1.5s ease-in;
 }
 
 .portfolio-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 .portfolio-btn a {
@@ -234,31 +194,16 @@ html {
 .skills {
   height: 80vh;
   opacity: 0.9;
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.7)),
-      to(rgba(0, 0, 0, 0.7))
-    ),
-    url(../images/skills-bg2.jpg);
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(../images/skills-bg2.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../images/skills-bg2.jpg);
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
-  -webkit-clip-path: polygon(0 13%, 100% 0, 100% 90%, 0% 100%);
   clip-path: polygon(0 13%, 100% 0, 100% 90%, 0% 100%);
 }
 .skills-box {
   max-width: 70vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   padding-top: 10%;
   margin: 0 auto;
@@ -313,11 +258,7 @@ html {
 
 .education {
   width: 70%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
   margin: 0 auto;
   padding: 10% 0 6% 0;
@@ -392,31 +333,11 @@ textarea {
   background-color: #ccc;
 }
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   position: relative;
   height: 50vh;
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      right bottom,
-      from(rgba(100, 181, 246, 0.9)),
-      to(rgba(26, 35, 126, 0.9))
-    ),
-    url(../images/footer-bg.jpg);
-  background-image: -o-linear-gradient(
-      left top,
-      rgba(100, 181, 246, 0.9),
-      rgba(26, 35, 126, 0.9)
-    ),
-    url(../images/footer-bg.jpg);
   background-image: linear-gradient(
       to right bottom,
       rgba(100, 181, 246, 0.9),
@@ -425,7 +346,6 @@ textarea {
     url(../images/footer-bg.jpg);
   background-size: cover;
   background-position: bottom;
-  -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
   clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 }
 .footer p {
@@ -440,10 +360,7 @@ textarea {
   bottom: 0;
 }
 .code-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
   justify-content: space-around;
   list-style: none;
   text-align: center;
@@ -461,61 +378,24 @@ textarea {
 }
 /*ANIMATIONS GOES HERE*/
 
-@-webkit-keyframes up {
+/* @keyframes up {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(10px);
     transform: translateY(10px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-}
-
-@keyframes up {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-}
-@-webkit-keyframes down {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
 }
 @keyframes down {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0px);
     transform: translateY(0px);
-  }
-}
-@-webkit-keyframes load {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 @keyframes load {
@@ -527,14 +407,9 @@ textarea {
   }
 }
 /*Media Queries Goes Here*/
-@media screen and (max-width: 670px) {
+/* @media screen and (max-width: 670px) {
   .header {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
     justify-content: flex-start;
     width: 100%;
     position: relative;
@@ -543,8 +418,6 @@ textarea {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
   }
   .name-box img {
@@ -623,17 +496,11 @@ textarea {
     margin-right: auto;
     width: 100%;
     border: 1px solid #e0e0e0;
-    -webkit-animation: load 1.5s ease-in;
     animation: load 1.5s ease-in;
   }
 
   .portfolio-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     border-radius: 2px;
   }
@@ -675,24 +542,14 @@ textarea {
     padding: 0 3% 10%;
   }
   .footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     margin-top: 25%;
   }
   .code-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
   }
   .code-links li a {
   }
-}
+} */
