@@ -19,6 +19,9 @@ html {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
+body {
+  background-color: #eceff1;
+}
 
 .header {
   height: 100vh;
@@ -27,7 +30,7 @@ html {
   display: flex;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  background-image: -webkit-gradient(
+  background-image: -webkit-linear-gradient(
       linear,
       left top,
       right bottom,
